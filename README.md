@@ -38,12 +38,12 @@ var document = {
     template: html,
     context: {
         user: 'User'
-    },
-    path: "./output.pdf"
+    }
 };
 
 pdf.create(document, options)
     .then(res => {
+        // the PDF as a buffer
         console.log(res)
     })
     .catch(error => {
